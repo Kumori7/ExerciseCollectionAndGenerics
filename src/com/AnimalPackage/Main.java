@@ -9,6 +9,7 @@ public class Main {
 
         Dog d1 = new Dog("Felix", 8);
         Dog d2 = new Dog("George", 16);
+        Animal d3 = new Dog("doggy",4);
 
         Rabbit r1 = new Rabbit("Hacker", 3);
 
@@ -17,9 +18,10 @@ public class Main {
         animalArrayList.add(c2);
         animalArrayList.add(d1);
         animalArrayList.add(d2);
+        animalArrayList.add(d3);
         animalArrayList.add(r1);
 
-        //System.out.println("animalArrayList: " + animalArrayList);
+        System.out.println("animalArrayList: " + animalArrayList);
 
         HashMap<String, Animal> map = new HashMap<>();
         map.put(c1.getName(), c1);
@@ -41,6 +43,7 @@ public class Main {
         set.add(c2);
         set.add(d1);
         set.add(d2);
+        set.add(d3);
         set.add(r1);
 
         //System.out.println("set: "+ set);
@@ -57,17 +60,18 @@ public class Main {
 
         Iterator<Animal> it =  set.iterator();
 
-        while(it.hasNext()){
-            System.out.println(it.next());
-        }
+//        while(it.hasNext()){
+//            System.out.println(it.next());
+//        }
 
         //Q6
         System.out.println(map.containsKey("Dolphin"));
 
         //Q7
 
-        //animalArrayList.sort();
+        Collections.sort(animalArrayList);
 
+        System.out.print("animalArrayList: " + animalArrayList);
 
 
     } // end of main method

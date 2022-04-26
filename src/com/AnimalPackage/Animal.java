@@ -1,6 +1,8 @@
 package com.AnimalPackage;
 
-abstract class Animal implements Comparable<Animal>  {
+
+abstract class Animal  implements Comparable<Animal> {
+
 
     // implements Comparable<Animal>
     String name;
